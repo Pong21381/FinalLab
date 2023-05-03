@@ -93,7 +93,7 @@ namespace FinalLab.Controllers
 
             try
             {
-                var position = _dbContext.positions.FirstOrDefault(p => p.positionId == employees.position_Id);
+                var position = _dbContext.positions.FirstOrDefault(p => p.positionId == employees.positionId);
                 if (position == null)
                 {
                     return BadRequest("Invalid position ID");
